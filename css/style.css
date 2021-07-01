@@ -7,9 +7,10 @@
 }
 
 .body {
-  background-image: url("../img/programmer.jpg");
-  background-repeat: no-repeat;
+  background: linear-gradient(to right, rgba(27, 29, 29, 0.8), rgba(0, 0, 0, 0.6)), url("../img/programmer.jpg") center top no-repeat;
+  z-index: 20;
   background-size: cover;
+  height: 700px;
 }
 
 body {
@@ -29,7 +30,6 @@ a {
 }
 
 .nav-center {
-  padding: 1em;
   background: #7e7676;
   width: 100%;
   /*   align-items:center; */
@@ -116,7 +116,7 @@ a {
 .nav-toggle {
   font-size: 2.5rem;
   margin-right: 2vh;
-  color: black;
+  color: #e6dddd;
   background: transparent;
   border-color: transparent;
   transition: 0.3s all linear;
@@ -126,8 +126,7 @@ a {
 }
 
 .nav-toggle:hover {
-  color: black;
-  transform: rotate(45deg);
+  color: #fffbfb;
   outline: none;
 }
 

@@ -114,7 +114,7 @@ a {
 .nav-toggle {
   font-size: 2.5rem;
   margin-right: 2vh;
-  color: black;
+  color: rgb(230, 221, 221);
   background: transparent;
   border-color: transparent;
   transition: 0.3s all linear;
@@ -123,8 +123,7 @@ a {
   outline: none;
 }
 .nav-toggle:hover {
-  color: black;
-  transform: rotate(45deg);
+  color: rgb(255, 251, 251);
   outline: none;
 }
 
