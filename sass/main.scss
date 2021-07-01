@@ -5,13 +5,13 @@
   padding: 0;
   box-sizing: border-box;
 }
-.body{
-  background: linear-gradient(to right, rgba(27, 29, 29, 0.8), 
-  rgba(0, 0, 0, 0.6)), url("../img/programmer.jpg") center top no-repeat;
-  z-index: 20;
-  background-size: cover;
-  height: 700px;
+
+#main{
+background: linear-gradient(to right, rgba(0, 0, 0, 0.8), 
+  rgba(17, 17, 17, 0.6)), url("../img/bg.jpg") center top no-repeat;
   
+  background-size: cover;
+  height: 100vh;
 }
 
 body {
@@ -21,6 +21,7 @@ body {
   color: white;
 }
 ul {
+  background-color: rgb(0, 0, 0);
   list-style-type: none;
 }
 a {
@@ -30,7 +31,7 @@ a {
 
 
 .nav-center {
-  background: rgb(126, 118, 118);
+  background:transparent;
   width: 100%;
   /*   align-items:center; */
   /*   justify-content: space-between; */
@@ -71,12 +72,12 @@ a {
   margin: auto;
 }
 .links li a {
-  color: #121212;
+  color: #fff7f7;
   font-size: 1.2rem;
   transition: 0.6s border ease;
 }
 .links li a:hover {
-  border-bottom: black 2px solid;
+  border-bottom: rgb(117, 110, 110) 2px solid;
 }
 .social-icons {
   display: flex;
@@ -88,7 +89,7 @@ a {
 .show-icons {
   height: 10vh;
   align-items: center;
-  border-top: 2px solid black;
+  border-top: 2px solid rgb(255, 247, 247);
   overflow: visible;
 
 }
@@ -101,20 +102,20 @@ a {
 .social-icons li a {
   font-size: 2rem;
   padding: 0.4em;
-  color: black;
+  color: rgb(255, 248, 248);
   transition: all 0.5s ease;
   border-radius: 50%;
 }
 
 .social-icons li a:hover {
-  background: black;
+  background: rgb(44, 42, 42);
   color: white;
 }
 
 .nav-toggle {
   font-size: 2.5rem;
   margin-right: 2vh;
-  color: rgb(230, 221, 221);
+  color: rgb(255, 255, 255);
   background: transparent;
   border-color: transparent;
   transition: 0.3s all linear;
@@ -123,7 +124,7 @@ a {
   outline: none;
 }
 .nav-toggle:hover {
-  color: rgb(255, 251, 251);
+  color: rgb(226, 9, 9);
   outline: none;
 }
 
