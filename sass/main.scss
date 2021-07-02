@@ -13,7 +13,11 @@ background: linear-gradient(to right, rgba(0, 0, 0, 0.8),
   background-size: cover;
   height: 100vh;
 }
-
+.logo{
+  width: 200px;
+  height: 400px;
+  color: aliceblue;
+}
 body {
   line-height: 1.5;
   font-size: 0.875rem;
@@ -61,15 +65,15 @@ a {
 }
 
 .show-links {
-  height: 80vh;
+  height: 70vh;
   transition: all 1s ease-in-out;
 }
 .links li {
   font-size: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 2px;
-  padding: 1em 1em;
-  margin: auto;
+  // padding:  ;
+  margin: 20px;
 }
 .links li a {
   color: #fff7f7;
