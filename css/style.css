@@ -65,10 +65,14 @@ a {
 
 .show-links {
   background: url("../img/pzlogo-removebg.png") center top no-repeat;
-  background-size: 70vh;
+  background-size: 65vh;
   background-position-y: 18vh;
   height: 70vh;
   transition: all 1s ease-in-out;
+}
+
+.active {
+  border-bottom-color: #ff1100 !important;
 }
 
 .links li {
@@ -81,11 +85,11 @@ a {
 .links li a {
   color: #fff7f7;
   font-size: 1.2rem;
-  transition: 0.6s border ease;
+  transition: 0.4s border;
 }
 
 .links li a:hover {
-  border-bottom: #756e6e 2px solid;
+  border-bottom: #eeff00 4px solid;
 }
 
 .social-icons {
@@ -182,6 +186,44 @@ a {
   footer {
     display: none;
   }
+}
+.about-mf .box-shadow-full {
+  padding-left: 2vh;
+  padding-right: 2vh;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+  background-color: white;
+  box-shadow: 10px 20px 30px black;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+.skill-mf span {
+  color: #4e4e4e;
+}
+
+.skill-mf .progress {
+  background-color: #cde1f8;
+  margin: 0.5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: 0.7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: 0.7rem;
+  background-color: #0078ff;
+}
+
+.img {
+  max-width: 160px;
 }
 
 /*# sourceMappingURL=style.css.map */
