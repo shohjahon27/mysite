@@ -141,6 +141,79 @@ a {
   outline: none;
 }
 
+.little_card_name {
+  color: #fff;
+  font-family: cursive;
+  text-align: center;
+  margin-top: 250px;
+}
+
+.intro {
+  height: 100vh;
+  position: relative;
+  color: #fff;
+}
+
+.intro .intro-content {
+  text-align: center;
+  position: absolute;
+}
+
+.intro .overlay-itro {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.intro .intro-title {
+  color: #fff;
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.intro .intro-subtitle {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.intro .text-slider-items {
+  display: none;
+}
+
+.intro-single {
+  height: 350px;
+}
+
+.intro-single .intro-content {
+  margin-top: 30px;
+}
+
+.intro-single .intro-title {
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+.intro-single .breadcrumb {
+  background-color: transparent;
+  color: #0078ff;
+}
+
+.intro-single .breadcrumb .breadcrumb-item:before {
+  color: #cde1f8;
+}
+
+.intro-single .breadcrumb .breadcrumb-item.active {
+  color: #cde1f8;
+}
+
+.intro-single .breadcrumb a {
+  color: #fff;
+}
+
 @media screen and (min-width: 1050px) {
   .nav-toggle {
     display: none;
@@ -193,7 +266,7 @@ a {
   margin-top: 4vh;
   margin-bottom: 4vh;
   background-color: white;
-  box-shadow: 10px 20px 30px black;
+  box-shadow: 10px 20px 30px #888787;
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
@@ -228,7 +301,6 @@ a {
 
 .footer-paralax {
   margin-bottom: 5vh;
-  box-shadow: black 10px 30px 20px;
 }
 
 .contact-mf {
@@ -274,6 +346,28 @@ a {
 
 .social {
   font-size: 4vh;
+}
+
+@media (min-width: 768px) {
+  .box-shadow-full {
+    padding: 3rem;
+  }
+}
+.box-shadow-full {
+  padding: 3rem 1.25rem;
+  position: relative;
+  background-color: #fff;
+  margin-bottom: 3rem;
+  z-index: 2;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+user agent stylesheet div {
+  display: block;
 }
 
 /*======================================
@@ -346,6 +440,14 @@ a {
     margin-top: 3rem;
     padding-left: 0rem;
   }
+}
+.social {
+  display: flex;
+  flex-direction: row;
+}
+.social li {
+  margin-left: 2vh;
+  font-size: 5vh;
 }
 
 /*# sourceMappingURL=style.css.map */
