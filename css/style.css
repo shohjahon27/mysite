@@ -536,6 +536,11 @@ user agent stylesheet div {
   margin-bottom: 0;
 }
 
+@media (max-width: 710px) {
+  .counter-num, .icon-circle {
+    display: none;
+  }
+}
 .footer-top {
   background: #0d2735;
   border-top: 1px solid #17455e;

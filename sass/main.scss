@@ -540,6 +540,13 @@ div {
   margin-bottom: 0;
 }
 
+ @media (max-width: 710px) {
+    .counter-num, .icon-circle {
+      display: none;
+    }
+  }
+
+
 // footer
 .footer-top {
   background: #0d2735;
