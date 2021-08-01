@@ -531,13 +531,137 @@ div {
 .counter-ico {
   margin-bottom: 1rem;
 }
-
+.icon-circle{
+  font-size:2rem !important;
+  color: #fffb00 ;
+}
 .counter-num .counter {
   font-size: 2rem;
   margin-bottom: 0;
 }
 
+// footer
+.footer-top {
+  background: #0d2735;
+  border-top: 1px solid #17455e;
+  border-bottom: 1px solid #123649;
+  padding: 60px 0 30px 0;
+}
 
+ .footer-top .footer-info {
+  margin-bottom: 30px;
+}
+
+ .footer-top .footer-info h3 {
+  font-size: 18px;
+  margin: 0 0 20px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  color: #a2cce3;
+  font-weight: 600;
+}
+
+ .footer-top .footer-info p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+ .footer-top .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #161718;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+ .footer-top .social-links a:hover {
+  background: #68A4C4;
+  color: #fff;
+  text-decoration: none;
+}
+
+ .footer-top h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #a2cce3;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+ .footer-top .footer-links {
+  margin-bottom: 30px;
+}
+
+ .footer-top .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ .footer-top .footer-links ul i {
+  padding-right: 2px;
+  color: #a2cce3;
+  font-size: 18px;
+  line-height: 1;
+}
+
+ .footer-top .footer-links ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+ .footer-top .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+ .footer-top .footer-links ul a {
+  color: #fff;
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+}
+
+ .footer-top .footer-links ul a:hover {
+  color: #a2cce3;
+}
+
+ .footer-top .footer-contact {
+  margin-bottom: 30px;
+}
+
+ .footer-top .footer-contact p {
+  line-height: 26px;
+}
+
+ .copyright {
+  text-align: center;
+  padding-top: 30px;
+}
+
+ .credits {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
+}
+
+ .credits a {
+  color: #a2cce3;
+}
+.footer-contact{
+    color: white;
+}
 
 
 
