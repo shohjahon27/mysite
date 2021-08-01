@@ -513,26 +513,29 @@ div {
 //--//-->   COUNTER
 ======================================*/
 
-// .counter-box {
-//   color: #fff;
-//   text-align: center;
-// }
+.counter-box {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-align: center;
+  margin-top: 3rem;
+}
+.section-counter{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), 
+  rgba(0, 0, 0, 0.253)), url("https://the1a.org/wp-content/uploads/sites/4/2017/05/9153767970_c287effc20_h-1500x844.jpg ") center top no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: rgb(34, 31, 31);
+    height: calc(50vh - 70px);
+}
 
-// .counter-ico {
-//   margin-bottom: 1rem;
-// }
+.counter-ico {
+  margin-bottom: 1rem;
+}
 
-// .counter-ico .ico-circle {
-//   height: 60px;
-//   width: 60px;
-//   line-height: 1.8;
-//   box-shadow: 0 0 0 10px #cde1f8;
-// }
-
-// .counter-num .counter {
-//   font-size: 2rem;
-//   margin-bottom: 0;
-// }
+.counter-num .counter {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
 
 
 
