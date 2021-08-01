@@ -9,8 +9,12 @@
 #main{
   background: linear-gradient(to right, rgba(0, 0, 0, 0.8), 
   rgba(0, 0, 0, 0.6)), url("../img/photo_2021-03-29_20-59-14.jpg") center top no-repeat;
-  background-size: cover;
-  height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    color: rgb(34, 31, 31);
+    height: calc(100vh - 70px);
+  
+   
 }
 .logo{
   width: 200px;
@@ -38,12 +42,16 @@ a {
   width: 100%;
   /*   align-items:center; */
   /*   justify-content: space-between; */
-  width: 100%;
+  position: fixed;
+  background-color: rgba(41, 30, 43, 0.562);
+  z-index: 10;
+  
 }
 
 .nav-header {
   display: flex;
   justify-content: space-between;
+  
 }
 
 .nav-header img {
@@ -71,7 +79,7 @@ a {
   transition: all 1s ease-in-out;
 }
 .active{
-  border-bottom-color: rgb(255, 17, 0) !important;
+  color: #ffee00 !important;
   
 }
 .links li {
@@ -138,79 +146,12 @@ a {
   outline: none;
 }
 
-.little_card_name{
-  color: #fff;
-  font-family: cursive;
-  text-align:center;
-  margin-top: 250px;
+// In Section my name
+.mycard{
+  width: 50% !important;
 }
-
-
-// Intro
-.intro {
-  height: 100vh;
-  position: relative;
-  color: #fff;
-}
-
-.intro .intro-content {
-  text-align: center;
-  position: absolute;
-}
-
-.intro .overlay-itro {
-  position: absolute;
-  top: 0;
-  left: 0px;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-  opacity: .9;
-}
-
-.intro .intro-title {
-  color: #fff;
-  font-weight: 600;
-  font-size: 3rem;
-}
-
-.intro .intro-subtitle {
-  font-size: 1.5rem;
-  font-weight: 300;
-}
-
-.intro .text-slider-items {
-  display: none;
-}
-
-.intro-single {
-  height: 350px;
-}
-
-.intro-single .intro-content {
-  margin-top: 30px;
-}
-
-.intro-single .intro-title {
-  text-transform: uppercase;
-  font-size: 3rem;
-}
-
-.intro-single .breadcrumb {
-  background-color: transparent;
-  color: #0078ff;
-}
-
-.intro-single .breadcrumb .breadcrumb-item:before {
-  color: #cde1f8;
-}
-
-.intro-single .breadcrumb .breadcrumb-item.active {
-  color: #cde1f8;
-}
-
-.intro-single .breadcrumb a {
-  color: #fff;
+.my_name{
+  width: 1300px !important;
 }
 
 @media screen and (min-width: 1050px) {
@@ -260,7 +201,6 @@ a {
 
 // About me
 
-
 .about-mf .box-shadow-full {
   padding-left: 2vh;
   padding-right: 2vh;
@@ -299,22 +239,7 @@ a {
   max-width: 160px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 //--//-->   CONTACT
-
-
 .footer-paralax {
   margin-bottom: 5vh;
 }
@@ -467,15 +392,180 @@ div {
   }
 }
 
-// .back-to-top{
-//   float: right;
-//   font-size: 4vh;
-//   margin-right: 4vh;
-//   margin-bottom: 2vh;
-//   background: #0078ff;
-//   padding: 1.5vh;
+.back-to-top{
+  position: relative !important;
+  display: fixed !important; 
+  ;
+  float: right;
+  font-size: 4vh;
+  margin-right: 4vh;
+  margin-bottom: 2vh;
+  background: #0078ff;
+  padding: 1.5vh;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+}
+
+/*======================================
+//--//-->   PORTFOLIO
+======================================*/
+
+.work-box {
+  margin-bottom: 3rem;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  box-shadow: 0 1px 1px 0 rgb(0 0 0 / 6%), 0 2px 5px 0 rgb(0 0 0 / 20%);
+    background-color: rgb(255, 255, 255);
+}
+
+.work-box:hover img {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+.work-img {
+  display: block;
+  overflow: hidden;
+}
+
+.work-img img {
+  transition: all 1s;
+}
+
+.work-content {
+  padding: 2rem 3% 1rem 4%;
+}
+
+.work-content .w-more {
+  color: #4e4e4e;
+  font-size: .8rem;
+}
+
+.work-content .w-more .w-ctegory {
+  color: #0078ff;
+}
+
+.work-content .w-like {
+  font-size: 2.5rem;
+  color: #0078ff;
+  float: right;
+}
+
+.work-content .w-like a {
+  color: #0078ff;
+}
+
+.work-content .w-like .num-like {
+  font-size: .7rem;
+}
+
+.w-title {
+  font-size: 1.2rem;
+}
+
+
+/*======================================
+//--//-->   SERVICES
+======================================*/
+
+.service-box {
+  background-color: rgb(255, 255, 255);
+  padding: 2.5rem 1.3rem;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 1px 1px 0 rgb(0 0 0 / 6%), 0 2px 5px 0 rgb(0 0 0 / 20%);
+}
+
+.service-box:hover .ico-circle {
+  transition: all 500ms ease;
+  color: rgb(7, 114, 255);
+}
+
+.service-box .service-ico {
+  margin-bottom: 1rem;
+  color: #1e1e1e;
+}
+
+.service-box .ico-circle {
+  transition: all 500ms ease;
+  font-size: 4rem;
+  border-radius: 3rem;
+}
+.ico-circle {
+  display: flex;
+  justify-content:center;
+  padding: 1rem;
+  width: 100%;
+}
+.service-box .s-title {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: .4rem 0;
+}
+
+.service-box .s-description {
+  color: #4e4e4e;
+}
+
+/*======================================
+//--//-->   COUNTER
+======================================*/
+
+// .counter-box {
 //   color: #fff;
 //   text-align: center;
-//   border-radius: 50%;
 // }
 
+// .counter-ico {
+//   margin-bottom: 1rem;
+// }
+
+// .counter-ico .ico-circle {
+//   height: 60px;
+//   width: 60px;
+//   line-height: 1.8;
+//   box-shadow: 0 0 0 10px #cde1f8;
+// }
+
+// .counter-num .counter {
+//   font-size: 2rem;
+//   margin-bottom: 0;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//      ||==========||          ||            ||               
+//      ||                      ||            ||                  
+//      ||                      ||            ||
+//      ||                      ||            ||
+//      ||                      ||            ||
+//      ||                      ||============||  ohjahon
+//      ||==========||          ||            ||
+//                  ||          ||            ||
+//                  ||          ||            ||
+//                  ||          ||            ||
+//                  ||          ||            ||  
+//                  ||          ||            ||
+//      ||==========||          ||            ||
+//
+
+     
