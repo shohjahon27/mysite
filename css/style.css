@@ -541,6 +541,12 @@ user agent stylesheet div {
     display: none;
   }
 }
+.vedio_cards {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  width: 425px !important;
+  margin: 1vh;
+}
+
 .footer-top {
   background: #0d2735;
   border-top: 1px solid #17455e;
