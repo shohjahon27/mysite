@@ -543,8 +543,6 @@ user agent stylesheet div {
 }
 .vedio_cards {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
-  width: 425px !important;
-  margin: 1vh;
 }
 
 .footer-top {
