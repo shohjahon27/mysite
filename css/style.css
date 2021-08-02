@@ -679,4 +679,10 @@ user agent stylesheet div {
   color: white;
 }
 
+.zerochat {
+  font-size: 50px;
+  float: right;
+  position: fixed;
+}
+
 /*# sourceMappingURL=style.css.map */
