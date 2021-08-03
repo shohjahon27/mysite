@@ -696,13 +696,59 @@ div {
 .zerochat{
   font-size:30px !important;
   position:fixed;  
-  margin-top: 20rem;
+  margin-top: 30rem;
   z-index: 5;
 }
-
 // ========================
 //     ZEROCHAT end
 // ========================
+
+
+
+
+// ========================
+//     swipe start here
+// ========================
+
+
+ #homesection .container {
+      position: relative;
+      height: 500px;
+      height: 120vh;
+    }
+
+
+    .swiper-container {
+      width: 90%;
+      height: 70%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 19px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent;
+      color: white;
+    }
+    .btn{
+        color: white;
+         border-radius:0px;
+        outline: 0px;
+       
+    }
+ 
+      .swiper-button-next,
+      .swiper-button-prev{
+          color: rgb(255, 255, 255) !important;
+      }
+    
+// ========================
+//     swiper end
+// ========================
+
 
 
 
