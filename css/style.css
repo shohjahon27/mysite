@@ -389,20 +389,6 @@ user agent stylesheet div {
   font-size: 5vh;
 }
 
-.back-to-top {
-  position: relative !important;
-  display: fixed !important;
-  float: right;
-  font-size: 4vh;
-  margin-right: 4vh;
-  margin-bottom: 2vh;
-  background: #0078ff;
-  padding: 1.5vh;
-  color: #fff;
-  text-align: center;
-  border-radius: 50%;
-}
-
 /*======================================
 //--//-->   PORTFOLIO
 ======================================*/
