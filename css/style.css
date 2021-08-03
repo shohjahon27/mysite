@@ -680,7 +680,7 @@ user agent stylesheet div {
 }
 
 .zerochat {
-  font-size: 50px;
+  font-size: 20px;
   position: fixed;
   margin-top: 20rem;
   z-index: 5;

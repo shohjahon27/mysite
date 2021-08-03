@@ -12,6 +12,7 @@
     <meta content="" name="description">
     <title>Sh.Kholpulatov</title>
     <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/zerochat.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
@@ -77,9 +78,32 @@
       </ul>
     </div>
   </nav>
-   <a class="zerochat" href="zerochat.html"><i class="far fa-comment-dots"></i></a>
+   <!-- <a class="zerochat"><i class="far fa-comment-dots"></i></a> -->
   
+ <button type="button" class="btn btn-success zerochat" data-bs-toggle="modal" data-bs-target="#exampleModal">
+ <i class="far fa-comment-dots"></i>
+</button>
+
    
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body ">
+        <h1 id="chatLog">welcome to zer0 chatbot<br></h1>
+<div style="text-align: center;"><input id="userBox" placeholder="biror nima deng" type="text" onkeydown="if(event.keyCode == 13){talk()}"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
  </section>
 
   <!-- body section -->
@@ -102,6 +126,7 @@
                       <p><span class="title-s">Profile: </span> <span>front-end developer</span></p>
                       <p><span class="title-s">Email: </span> <span>xolpolatovshohjahon@gmail.com</span></p>
                       <p><span class="title-s">Phone: </span> <span>(91) 224-79-40</span></p>
+                      <a style="background-color: blueviolet; color: aliceblue; padding: 5px; border-radius:5px;" href="img/CV.pdf">Download CV</a>
                     </div>
                   </div>
                 </div>
@@ -764,7 +789,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="js/main.js"></script>
-<script src="js/zerochat.js"></script>
 
 </body>
 </html>
