@@ -89,17 +89,18 @@
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable">
     <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+      <div class="modal-header text-light bg-success">
+        <h5 class="modal-title " id="exampleModalLabel">Zero Chat</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body ">
-        <h1 id="chatLog">welcome to zer0 chatbot<br></h1>
-<div style="text-align: center;"><input id="userBox" placeholder="biror nima deng" type="text" onkeydown="if(event.keyCode == 13){talk()}"></div>
+      <div class="modal-body bg-light ">
+        <p id="chatLog" class="">welcome to zer0 chatbot<br></p>
+
       </div>
-      <div class="modal-footer">
+      <div class="modal-footer ">
+        <input id="userBox" class="form-control m-0" placeholder="biror nima deng" type="text" onkeydown="if(event.keyCode == 13){talk()}">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
       </div>
     </div>
   </div>

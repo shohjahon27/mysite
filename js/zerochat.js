@@ -77,7 +77,7 @@ var know = {
 };
 function talk() {
   var user = document.getElementById("userBox").value;
-  document.getElementById("chatLog").innerHTML += "Siz: " + user + "<br>";
+  document.getElementById("chatLog").innerHTML +=  "siz:" + user + "<br>";
   if (user in know) {
     document.getElementById("chatLog").innerHTML +=
       "ZeroBot: " + know[user] + "<br>" + "<hr>";
