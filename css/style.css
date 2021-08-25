@@ -301,7 +301,9 @@ a {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
-*, ::after, ::before {
+*,
+::after,
+::before {
   box-sizing: border-box;
 }
 
@@ -501,7 +503,7 @@ user agent stylesheet div {
 }
 
 .section-counter {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.253)), url("https://the1a.org/wp-content/uploads/sites/4/2017/05/9153767970_c287effc20_h-1500x844.jpg ") center top no-repeat;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.253)), url("https://data.1freewallpapers.com/download/hacker-computer-sadic-dark-anarchy-background-images.jpg") center top no-repeat;
   background-size: cover;
   background-attachment: fixed;
   color: #221f1f;
@@ -523,7 +525,8 @@ user agent stylesheet div {
 }
 
 @media (max-width: 710px) {
-  .counter-num, .icon-circle {
+  .counter-num,
+.icon-circle {
     display: none;
   }
 }
@@ -586,7 +589,7 @@ user agent stylesheet div {
 }
 
 .footer-top .social-links a:hover {
-  background: #68A4C4;
+  background: #68a4c4;
   color: #fff;
   text-decoration: none;
 }
