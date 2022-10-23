@@ -1,0 +1,739 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#main {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+    url("../img/bbbb.jpg") center top no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: rgb(34, 31, 31);
+  height: calc(100vh - 70px);
+}
+.logo {
+  width: 200px;
+  height: 400px;
+  color: aliceblue;
+}
+body {
+  line-height: 1.5;
+  font-size: 0.875rem;
+  background: rgb(37, 36, 36);
+  color: white;
+}
+ul {
+  // background-color: rgb(0, 0, 0);
+  list-style-type: none;
+}
+a {
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+.nav-center {
+  background: transparent;
+  width: 100%;
+  /*   align-items:center; */
+  /*   justify-content: space-between; */
+  position: fixed;
+  background-color: rgba(41, 30, 43, 0.562);
+  z-index: 10;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-header img {
+  cursor: pointer;
+  height: 50px;
+  float: left;
+  margin: 1em;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  /*   height: 80vh; */
+  transition: all 1s ease-in-out;
+  height: 0;
+  overflow: hidden;
+}
+
+.show-links {
+  background: url("../img/pzlogo-removebg.png") center top no-repeat;
+  background-size: 65vh;
+  background-position-y: 18vh;
+  height: 70vh;
+  transition: all 1s ease-in-out;
+}
+.active {
+  color: #ffee00 !important;
+}
+.links li {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  // padding:  ;
+  margin: 1vh;
+}
+.links li a {
+  color: #fff7f7;
+  font-size: 1.2rem;
+  transition: 0.4s border;
+}
+.links li a:hover {
+  border-bottom: rgb(238, 255, 0) 4px solid;
+}
+.social-icons {
+  display: flex;
+  height: 0vh;
+  overflow: hidden;
+}
+
+.show-icons {
+  height: 10vh;
+  align-items: center;
+  border-top: 2px solid rgb(255, 247, 247);
+  overflow: visible;
+}
+.social-icons li {
+  margin: auto;
+  font-size: 1.5rem;
+  transition: all 0.5s linear;
+}
+
+.social-icons li a {
+  font-size: 2rem;
+  padding: 0.4em;
+  color: rgb(255, 248, 248);
+  transition: all 0.5s ease;
+  border-radius: 50%;
+}
+
+.social-icons li a:hover {
+  background: rgb(44, 42, 42);
+  color: white;
+}
+
+.nav-toggle {
+  font-size: 2.5rem;
+  margin-right: 2vh;
+  color: rgb(255, 255, 255);
+  background: transparent;
+  border-color: transparent;
+  transition: 0.3s all linear;
+  cursor: pointer;
+  justify-self: flex-end;
+  outline: none;
+}
+.nav-toggle:hover {
+  color: rgb(226, 9, 9);
+  outline: none;
+}
+
+// In Section my name
+.mycard {
+  width: 50% !important;
+}
+.my_name {
+  width: 1300px !important;
+}
+
+@media screen and (min-width: 1050px) {
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav-header {
+    display: block;
+  }
+
+  .links {
+    flex-direction: row;
+    height: auto;
+    display: flex;
+  }
+  .links li {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 1em 1em;
+    margin: auto;
+  }
+  .social-icons {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    border: none;
+    padding: 1em;
+  }
+
+  .social-icons li {
+    margin: auto;
+
+    font-size: 1rem;
+  }
+
+  .nav-center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  footer {
+    display: none;
+  }
+}
+
+// About me
+
+.about-mf .box-shadow-full {
+  padding-left: 2vh;
+  padding-right: 2vh;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 10px 20px 30px rgb(136, 135, 135);
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+.skill-mf span {
+  color: #4e4e4e;
+}
+
+.skill-mf .progress {
+  background-color: #cde1f8;
+  margin: 0.5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: 0.7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: 0.7rem;
+  background-color: #0078ff;
+}
+.img {
+  max-width: 160px;
+}
+
+//--//-->   CONTACT
+.footer-paralax {
+  margin-bottom: 5vh;
+}
+
+.contact-mf {
+  margin-top: 4rem;
+}
+
+/*======================================
+//--//-->   CONtaCT FORM
+======================================*/
+
+#sendmessage {
+  color: #0078ff;
+  border: 1px solid #0078ff;
+  display: none;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+#errormessage {
+  color: red;
+  display: none;
+  border: 1px solid red;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+#sendmessage.show,
+#errormessage.show,
+.show {
+  display: block;
+}
+
+.validation {
+  color: red;
+  display: none;
+  margin: 0 0 20px;
+  font-weight: 400;
+  font-size: 13px;
+}
+.social {
+  font-size: 4vh;
+}
+@media (min-width: 768px) {
+  .box-shadow-full {
+    padding: 3rem;
+  }
+}
+.box-shadow-full {
+  padding: 3rem 1.25rem;
+  position: relative;
+  background-color: #fff;
+  margin-bottom: 3rem;
+  z-index: 2;
+  box-shadow: 0 1px 1px 0 rgb(0 0 0 / 6%), 0 2px 5px 0 rgb(0 0 0 / 20%);
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+user agent stylesheet div {
+  display: block;
+}
+/*======================================
+//--//-->   BUTTON
+======================================*/
+
+.button {
+  display: inline-block;
+  padding: 0.3rem 0.6rem;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 1rem;
+  border-radius: 0.3rem;
+  border: 1px solid transparent;
+  transition: all 500ms ease;
+  cursor: pointer;
+}
+
+.button:focus {
+  outline: 0;
+}
+
+.button:hover {
+  background-color: #0062d3;
+  color: #fff;
+  transition: all 500ms ease;
+}
+
+.button-a {
+  background-color: #0078ff;
+  color: #fff;
+  border-color: #cde1f8;
+}
+
+.button-big {
+  padding: 0.9rem 2.3rem;
+  font-size: 1.2rem;
+}
+
+.button-rouded {
+  border-radius: 5rem;
+}
+
+.btn-lg {
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+}
+
+@media (min-width: 577px) {
+  .counter-box {
+    margin-bottom: 1.8rem;
+  }
+}
+
+@media (min-width: 767px) {
+  .about-mf .box-pl2 {
+    margin-top: 3rem;
+    padding-left: 0rem;
+  }
+
+  .card-blog {
+    margin-bottom: 3rem;
+  }
+
+  .contact-mf .box-pl2 {
+    margin-top: 3rem;
+    padding-left: 0rem;
+  }
+}
+.social {
+  display: flex;
+  flex-direction: row;
+  li {
+    margin-left: 2vh;
+    font-size: 5vh;
+  }
+}
+
+/*======================================
+//--//-->   PORTFOLIO
+======================================*/
+
+.work-box {
+  margin-bottom: 3rem;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  box-shadow: 0 1px 1px 0 rgb(0 0 0 / 6%), 0 2px 5px 0 rgb(0 0 0 / 20%);
+  background-color: rgb(255, 255, 255);
+}
+
+.work-box:hover img {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+.work-img {
+  display: block;
+  overflow: hidden;
+}
+
+.work-img img {
+  transition: all 1s;
+}
+
+.work-content {
+  padding: 2rem 3% 1rem 4%;
+}
+
+.work-content .w-more {
+  color: #4e4e4e;
+  font-size: 0.8rem;
+}
+
+.work-content .w-more .w-ctegory {
+  color: #0078ff;
+}
+
+.work-content .w-like {
+  font-size: 2.5rem;
+  color: #0078ff;
+  float: right;
+}
+
+.work-content .w-like a {
+  color: #0078ff;
+}
+
+.work-content .w-like .num-like {
+  font-size: 0.7rem;
+}
+
+.w-title {
+  font-size: 1.2rem;
+}
+
+/*======================================
+//--//-->   SERVICES
+======================================*/
+
+.service-box {
+  background-color: rgb(255, 255, 255);
+  padding: 2.5rem 1.3rem;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 1px 1px 0 rgb(0 0 0 / 6%), 0 2px 5px 0 rgb(0 0 0 / 20%);
+}
+
+.service-box:hover .ico-circle {
+  transition: all 500ms ease;
+  color: rgb(7, 114, 255);
+}
+
+.service-box .service-ico {
+  margin-bottom: 1rem;
+  color: #1e1e1e;
+}
+
+.service-box .ico-circle {
+  transition: all 500ms ease;
+  font-size: 4rem;
+  border-radius: 3rem;
+}
+.ico-circle {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  width: 100%;
+}
+.service-box .s-title {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.4rem 0;
+}
+
+.service-box .s-description {
+  color: #4e4e4e;
+}
+
+/*======================================
+//--//-->   COUNTER
+======================================*/
+
+.counter-box {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-align: center;
+  margin-top: 3rem;
+}
+.section-counter {
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.253)
+    ),
+    url("https://data.1freewallpapers.com/download/hacker-computer-sadic-dark-anarchy-background-images.jpg")
+      center top no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: rgb(34, 31, 31);
+  height: calc(50vh - 70px);
+}
+
+.counter-ico {
+  margin-bottom: 1rem;
+}
+.icon-circle {
+  font-size: 2rem !important;
+  color: #fffb00;
+}
+.counter-num .counter {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+@media (max-width: 710px) {
+  .counter-num,
+  .icon-circle {
+    display: none;
+  }
+}
+
+// ======================
+
+// vedio_cards here
+
+// ======================
+
+.vedio_cards {
+  box-shadow: 0 1px 1px 0 rgb(0 0 0 / 6%), 0 2px 5px 0 rgb(0 0 0 / 20%);
+  // margin: 1vh;
+}
+.less {
+  text-align: center;
+  margin-top: 8vh;
+  font-weight: bold;
+}
+.les {
+  text-align: center;
+  margin-bottom: 8vh;
+}
+// footer
+.footer-top {
+  background: #0d2735;
+  border-top: 1px solid #17455e;
+  border-bottom: 1px solid #123649;
+  padding: 60px 0 30px 0;
+}
+
+.footer-top .footer-info {
+  margin-bottom: 30px;
+}
+
+.footer-top .footer-info h3 {
+  font-size: 18px;
+  margin: 0 0 20px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  color: #a2cce3;
+  font-weight: 600;
+}
+
+.footer-top .footer-info p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+.footer-top .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #161718;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+.footer-top .social-links a:hover {
+  background: #68a4c4;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-top h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #a2cce3;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.footer-top .footer-links {
+  margin-bottom: 30px;
+}
+
+.footer-top .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-top .footer-links ul i {
+  padding-right: 2px;
+  color: #a2cce3;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.footer-top .footer-links ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.footer-top .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+.footer-top .footer-links ul a {
+  color: #fff;
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+}
+
+.footer-top .footer-links ul a:hover {
+  color: #a2cce3;
+}
+
+.footer-top .footer-contact {
+  margin-bottom: 30px;
+}
+
+.footer-top .footer-contact p {
+  line-height: 26px;
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.credits {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
+}
+
+.credits a {
+  color: #a2cce3;
+}
+.footer-contact {
+  color: white;
+}
+
+// ========================
+//     ZEROCHAT start
+// ========================
+
+.zerochat {
+  font-size: 30px !important;
+  position: fixed;
+  margin-top: 40rem;
+  z-index: 5;
+}
+// ========================
+//     ZEROCHAT end
+// ========================
+
+// ========================
+//     swipe start here
+// ========================
+
+#homesection .container {
+  position: relative;
+  height: 500px;
+  height: 120vh;
+}
+
+.swiper-container {
+  margin-left: 30px;
+  width: 90%;
+  height: 70%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  color: white;
+}
+.btn {
+  color: white;
+  border-radius: 0px;
+  outline: 0px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: rgb(255, 255, 255) !important;
+}
+
+// ========================
+//     swiper end
+// ========================
+
+//      ||==========||          ||            ||
+//      ||                      ||            ||
+//      ||                      ||            ||
+//      ||                      ||            ||
+//      ||                      ||            ||
+//      ||                      ||============||  ohjahon
+//      ||==========||          ||            ||
+//                  ||          ||            ||
+//                  ||          ||            ||
+//                  ||          ||            ||
+//                  ||          ||            ||
+//                  ||          ||            ||
+//      ||==========||          ||            ||
+//
